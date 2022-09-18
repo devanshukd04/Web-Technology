@@ -1,0 +1,14 @@
+.heading{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.button:hover{
+    opacity:1;
+}
+.container .row{
+    margin-bottom:10px;
+}
+.container .row:hover{
+    color:brown;
+}
