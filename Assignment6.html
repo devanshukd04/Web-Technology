@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome to VIT Pune</h1>
+    <h2>Animated Collapsibles</h2>
+
+
+    <div class="container">
+        <div class="row">
+            <button class="collapsible question">What is capital of India</button>
+            <div class="content">
+                The capital of India is New Delhi
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="collapsible question">What is capital of India</button>
+                <div class="content">
+                    The capital of India is New Delhi
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="collapsible question">What is capital of India</button>
+                <div class="content">
+                    The capital of India is New Delhi
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="collapsible question">What is capital of India</button>
+                <div class="content">
+                    The capital of India is New Delhi
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let but=document.getElementsByClassName("collapsible");
+        for(let i=0;i<but.length;i++){
+            but[i].addEventListener("click",function(){
+                this.classList.toggle("active");
+                var content=this.nextElementSibling;
+                if(content.style.display=="block"){
+                    content.style.display="none";
+                }
+                else{
+                    content.style.display="block";
+                }
+            });
+        }
+        
+    </script>
+</body>
+</html>

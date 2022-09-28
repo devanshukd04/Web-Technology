@@ -1,0 +1,45 @@
+/* *{
+    background-color: aqua;
+} */
+h1{
+    text-align: center;
+    color:rgb(23, 0, 128);
+    margin: 20px;
+}
+button{
+    height:40px;
+    width: 400px;
+    border-width: 3px;
+}
+.row{
+    margin:10px;
+}
+.row .question{
+    background-color: rgb(255, 174, 0);
+}
+.row .content{
+    background-color: rgba(240, 255, 255, 0.19);
+    font-weight: 500;
+    color:rgb(0, 72, 128);
+    margin-top: 5px;
+}
+.row{
+    background-color: rgba(240, 255, 255, 0.19);
+    text-align: center;
+}
+.container{
+    margin-left:40px;
+    margin-right:40px;
+    text-align: center;
+}
+.row button{
+    font-size: medium;
+    border-radius: 12px;
+}
+.content{
+    font-size: medium;
+}
+
+.question{
+    display: inline-block;
+}
