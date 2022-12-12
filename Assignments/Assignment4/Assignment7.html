@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style4.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function submit(){
+            console.log("Submit");
+            let input=document.getElementsByName('number');
+            for(let i=0;i<input.length;i++){
+                console.log(input[i].value);
+            }
+        }
+        function reverseArr(){
+            let ans="Reverse of array is: ";
+            let input=document.getElementsByName('number');
+            for(let i=input.length-1;i>=0;i--){
+                ans=ans+input[i].value+" ";
+            }
+            document.getElementById("reverseAns").innerHTML = ans;
+        }
+        function sortArr(){
+            console.log("sortArr");
+            const cars = [];
+            let input=document.getElementsByName('number');
+            for(let i=0;i<input.length;i++){
+                cars.push(input[i].value);
+            }
+            for(let i=0;i<input.length;i++){
+                for(let j=0;j<input.length-i-1;j++){
+                    if(cars[j]-cars[j+1]>0){
+                        var temp=cars[j]
+                        cars[j]=cars[j + 1]
+                        cars[j+1]=temp
+                    }
+                }
+            }
+            let ans="Sorted array is: ";
+            for(let i=0;i<cars.length;i++){
+                ans=ans+cars[i]+" ";
+            }
+            document.getElementById("sortAns").innerHTML = ans;
+        }
+    </script>
+    <h1>Sorting Array</h1>
+    <h2 style="margin-left:20px">Program to reverse and sort the elements</h2>
+    <div class="row">
+        <div class="column">
+            <h2>Enter Numbers</h2>
+            <div class="number">
+                <div class="label">
+                    <label for="number1">Number1:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number2">Number2:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number3">Number3:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number4">Number4:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number5">Number5:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number6">Number6:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number7">Number7:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number8">Number8:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number9">Number9:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            <div class="number">
+                <div class="label">
+                    <label for="number10">Number10:</label>
+                </div>
+                <input type="number" id="number" name="number">
+            </div>
+            
+        </div>
+        <div class="column">
+            <h2>Reverse the Numbers</h2>
+            <button onclick="reverseArr()">Reverse</button>
+            <div class="block1">
+                <p id="reverseAns"></p>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Sort the Numbers</h2>
+            <button onclick="sortArr()">Sort</button>
+            <div class="block2">
+                <p id="sortAns"></p>
+            </div>
+        </div>
+    </div>
+      
+</body>
+</html>

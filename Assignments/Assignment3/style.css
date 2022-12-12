@@ -1,0 +1,35 @@
+/* Style the video: 100% width and height to cover the entire window */
+b{
+  font-size: 40px;
+  color:aqua;
+}
+.content{
+  text-align:center;
+}
+.back-video{
+  position:absolute;
+  right:0;
+  bottom:0;
+  z-index:-1;
+}
+.content{
+  margin-top:40px;
+  text-align: center;
+}
+.text-content{
+  font-size: 20px;
+  color:brown;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.container h2{
+  margin:40px;
+  color:rgb(57, 220, 235)
+}

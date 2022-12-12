@@ -1,0 +1,12 @@
+html {  
+    scroll-behavior: smooth;  
+}
+a{
+    color:white;
+}
+.row{
+    margin-top: 20px;
+}
+footer{
+    margin-top:20px;
+}

@@ -1,0 +1,15 @@
+.row {
+    display:flex
+}
+.column {
+    flex:50%;
+    margin-top:20px;
+    margin-left:20px
+}
+h1,h3{
+    text-align:center;
+    margin:20px 80px 20px;
+}
+.column1{
+    margin-left:100px;
+}

@@ -54,8 +54,12 @@
 }
 .submit{
     color:green;
-    background-color: rgb(94, 224, 94);
 }  
+.image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* .submitRow{
     margin:25px;
     text-align: center;
@@ -82,3 +86,4 @@
         display:block;
     }
 }
+

@@ -1,0 +1,14 @@
+.nav{
+    margin: 20px;
+}
+h1{
+    color:brown;
+    text-align: center;
+    padding: 10px;
+    margin:10px;
+}
+.tab-content{
+    color:rgb(0, 162, 255);
+    margin-left:20px;
+    font-weight:200px;
+}
